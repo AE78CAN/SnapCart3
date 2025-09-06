@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapCart - Find the Best Deals</title>
+    <!-- Link to Picnic CSS for styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+    <!-- Link to our own stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🛒 SnapCart</h1>
+        <p>Find the best prices on food, household items, and more.</p>
+    </header>
+
+    <main>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for pasta, milk, ibuprofen..." aria-label="Search">
+            <button onclick="filterProducts()">Search</button>
+        </div>
+
+        <div id="productList" class="flex three demo">
+            <!-- Products will be dynamically inserted here by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>SnapCart © 2023. A prototype for finding the best deals.</p>
+    </footer>
+
+    <!-- Link to our JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
